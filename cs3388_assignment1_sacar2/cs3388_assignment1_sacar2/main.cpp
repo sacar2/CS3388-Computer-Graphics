@@ -135,7 +135,8 @@ void display() {
         
         // Rotate either clockwise about z axis, or counter clockwise about z axis
         // Translate to origin, rotate, then Translate to object's POS
-        glTranslatef(rectangles[i].translation_x+(rectangles[i].scaling_x/2), rectangles[i].translation_y+(rectangles[i].scaling_y/2), rectangles[i].translation_z+(rectangles[i].scaling_z/2));         glRotatef(rectangles[i].rotationDirection*spin, 0, 0, 1);
+        glTranslatef(rectangles[i].translation_x+(rectangles[i].scaling_x/2), rectangles[i].translation_y+(rectangles[i].scaling_y/2), rectangles[i].translation_z+(rectangles[i].scaling_z/2));
+        glRotatef(rectangles[i].rotationDirection*spin, 0, 0, 1);
         glTranslatef(-rectangles[i].translation_x-(rectangles[i].scaling_x/2), -rectangles[i].translation_y- (rectangles[i].scaling_y/2), -rectangles[i].translation_z-(rectangles[i].scaling_z/2));
         
         
